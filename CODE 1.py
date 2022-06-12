@@ -66,7 +66,7 @@ def compare():
         return ', '.join(map(str, j)) in ', '.join(map(str, k))
 
     if (removeElements(j, k)==True) :
-        print('The machines from the same system have the same fam_path, hence Validation failed!')
+        print(f'The memory servers {j}, have the same fam_path, hence Validation failed!')
     else:
         print('Only the rpc_interface of the machines are same, hence Validation failed!')
  
@@ -75,7 +75,8 @@ def compare():
         return ', '.join(map(str, j)) in ', '.join(map(str, l))
 
     if (removeElements(j, l)==True) :
-        print('The machines from the same system have the same libfabric_port, hence Validation failed!')
+        print(f'The memory servers {j}, have the same libfabric_port, hence Validation failed!')
+        
     else:
         print('Only the rpc_interface of the machines are same, hence Validation failed!')
 
